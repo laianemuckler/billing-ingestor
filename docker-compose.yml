@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  billing-ingestor:
+    build: .
+    container_name: billing-ingestor
+    ports:
+      - "8081:8081"
+    volumes:
+      - .:/app          
+    command: /billing-ingestor
