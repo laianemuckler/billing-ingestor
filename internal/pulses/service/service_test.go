@@ -65,7 +65,6 @@ func TestProcessPulse_MissingFields(t *testing.T) {
 	mockRepo := new(MockPulseRepository)
 	service := NewPulseService(mockRepo)
 
-	// Teste com erro de campos obrigatórios ausentes
 	pulseInput := domain.PulseInput{
 		TenantId:   "",
 		ProductSKU: "sku1",
