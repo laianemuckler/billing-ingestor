@@ -1,11 +1,11 @@
 # Billing-Ingestor
-###Contexto:
-####Parte 1:
+### Contexto:
+#### Parte 1:
 Fazer uso de boas práticas no desenvolvimento de software traz ganhos muito significativos quando pensamos em manutenibilidade, qualidade e evolução contínua de nossas soluções.
 Os princípios SOLID e princípios de design funcional, olhando aqui para a os princípios de programação funcional aplicados a forma como estruturamos  um sistema, têm papel fundamental auxiliando na estruturação de sistemas modulares, coesos e resilientes à mudança. Princípios como o da responsabilidade única e o de estar aberto para extensão, mas fechado para modificação ajudam a isolar responsabilidades e facilitam a introdução de novas funcionalidades sem impactar o que já existe. Já a inversão de dependência permite desacoplar regras de negócio das implementações, o que torna o sistema mais flexível a mudanças tecnológicas. Do lado funcional, práticas como o uso de funções mais específicas, com um único objetivo, imutabilidade e composição de funções tornam o código mais previsível, testável e fácil de manter. Isso reduz possíveis efeitos colaterais de  mudanças e aumenta a confiança das equipes para evoluir o sistema.
 Ao combinar esses princípios, criamos sistemas que favorecem a integração, extensão e evolução de código, podendo evoluir arquiteturas complexas de forma sustentável.
 
-####Parte 2:
+#### Parte 2:
 Implementação de uma das partes do sistema de bilhetagem de consumo: ingestor. 
 
 ---
