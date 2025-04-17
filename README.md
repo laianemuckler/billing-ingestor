@@ -1,12 +1,18 @@
 # Billing-Ingestor
+###Contexto:
+####Parte 1:
+Fazer uso de boas práticas no desenvolvimento de software traz ganhos muito significativos quando pensamos em manutenibilidade, qualidade e evolução contínua de nossas soluções.
+Os princípios SOLID e princípios de design funcional, olhando aqui para a os princípios de programação funcional aplicados a forma como estruturamos  um sistema, têm papel fundamental auxiliando na estruturação de sistemas modulares, coesos e resilientes à mudança. Princípios como o da responsabilidade única e o de estar aberto para extensão, mas fechado para modificação ajudam a isolar responsabilidades e facilitam a introdução de novas funcionalidades sem impactar o que já existe. Já a inversão de dependência permite desacoplar regras de negócio das implementações, o que torna o sistema mais flexível a mudanças tecnológicas. Do lado funcional, práticas como o uso de funções mais específicas, com um único objetivo, imutabilidade e composição de funções tornam o código mais previsível, testável e fácil de manter. Isso reduz possíveis efeitos colaterais de  mudanças e aumenta a confiança das equipes para evoluir o sistema.
+Ao combinar esses princípios, criamos sistemas que favorecem a integração, extensão e evolução de código, podendo evoluir arquiteturas complexas de forma sustentável.
 
-O **Billing-Ingestor** é um componente de ingestão de pulsos de uso, desenvolvido em **Go**, responsável por processar e agregar dados de consumo enviados por sistemas externos para fins de **cobrança (billing)**.
+####Parte 2:
+Implementação de uma das partes do sistema de bilhetagem de consumo: ingestor. 
 
 ---
 
 ## Descrição
 
-Este serviço coleta e armazena pulsos de uso enviados via requisições HTTP, realiza agregações diárias e, periodicamente, simula o envio desses dados a um sistema processador e armazenador.
+O **Billing-Ingestor** é um componente de ingestão desenvolvido em Golang, responsável por processar dados de consumo (pulsos) enviados via requisições HTTP, realizando agregações em lotes e simulando o envio desses dados a um sistema processador e armazenador.
 
 A aplicação foi construída utilizando **arquitetura limpa (Clean Architecture)**, permitindo maior organização, testabilidade e separação clara de responsabilidades entre camadas (handler, usecase, service, repository).
 
@@ -99,3 +105,4 @@ curl -X POST http://localhost:8081/pulses \
 - Adicionar testes unitários em todas as camadas e aumentar a cobertura
 - Adicionar Actions que permitem rodar todos os testes e fazer deploy para dev
 - Adicionar instrumentação para melhoria da Observabilidade
+
