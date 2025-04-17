@@ -14,7 +14,7 @@ Implementação de uma das partes do sistema de bilhetagem de consumo: ingestor.
 
 O **Billing-Ingestor** é um componente de ingestão desenvolvido em Golang, responsável por processar dados de consumo (pulsos) enviados via requisições HTTP, realizando agregações em lotes e simulando o envio desses dados a um sistema processador e armazenador.
 
-A aplicação foi construída utilizando **arquitetura limpa (Clean Architecture)**, permitindo maior organização, testabilidade e separação clara de responsabilidades entre camadas (handler, usecase, service, repository).
+A aplicação foi construída utilizando Clean Architecture, permitindo maior organização, testabilidade e separação clara de responsabilidades entre camadas (handler, usecase, service, repository).
 
 ---
 
@@ -81,7 +81,7 @@ Retorna uma lista de pulsos agregados.
 Registra um novo pulso de uso.
 
 ### **POST** `/agreggates/commit`
-Envia manualmente um lote de dados agregados com base em uma data.
+Envia manualmente um lote de dados agregados.
 
 ### Exemplo de requisição com cURL
 
