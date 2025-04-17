@@ -74,9 +74,10 @@ Retorna uma lista de pulsos agregados.
 ### **POST** `/pulses`
 Registra um novo pulso de uso.
 
+### **POST** `/agreggates/commit`
+Envia manualmente um lote de dados agregados com base em uma data.
 
-
-#### Exemplo de requisição com cURL
+### Exemplo de requisição com cURL
 
 Você pode adicionar um pulso para ser processado usando o `curl` com o seguinte comando:
 
